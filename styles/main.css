@@ -1,24 +1,229 @@
+/*
+GLOBAL
+*/
+
+section {
+    position: relative;
+    width: 960px;
+    height: 500px;
+    margin: auto;
+    font-family: Helvetica;
+}
+
+
+/*
+section class="presentation"
+*/
+
 .presentation {
     background-image: url("../images/presentation.png");
+    width: 1665, 47px;
+    height: 1078, 86px;
 }
+
+.presentation h1 {
+    width: 321px;
+    height: 74px;
+    position: absolute;
+    font-size: 64px;
+    font-weight: bold;
+    top: 47px;
+    left: 30%;
+    color: white;
+    line-height: 74px;
+}
+
+.presentation h2 {
+    position: absolute;
+    font-size: 36px;
+    width: 361px;
+    top: 329px;
+    left: 86px;
+    color: #FFFFFF;
+    background-color: #7299fe;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+
+
+/*
+section class="about-me"
+*/
 
 .about-me {
     background-color: #7299FE;
-    ;
+    height: 480px;
 }
+
+.about-me h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #1D06A7;
+    padding-top: 30px;
+}
+
+.about-me p {
+    position: relative;
+    font-family: Arial;
+    font-size: 14px;
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    line-height: 30px;
+    padding: 20px;
+}
+
+.about-me button {
+    font-size: 22px;
+    background-color: #d16fff;
+    color: white;
+    border-radius: 15px;
+    position: relative;
+    width: 187px;
+    height: 62px;
+    left: 38px;
+    top: 15px;
+}
+
+
+/*
+section class="mis-skills"
+*/
 
 .my-skills {
     background-color: #9022FF;
+    height: 370px;
 }
+
+.my-skills h2 {
+    color: #26CC4B;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.my-skills table {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 0%;
+    padding-top: 0%;
+}
+
+.my-skills h3 {
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+.my-skills div {
+    border: 1px solid #f6f6f6;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    width: 400px;
+    height: 10px;
+    margin: 10px;
+    display: block;
+}
+
+
+/*
+section class="portafolio"
+*/
 
 .portafolio {
     background-color: #FFD233;
+    height: 400px;
 }
+
+.portafolio h2 {
+    color: #00AD84;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+
+.portafolio div {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 0%;
+    padding-top: 0%;
+}
+
+
+/*
+section class="clientes"
+*/
 
 .clientes {
     background-color: #3F4E62;
+    height: 258px;
 }
+
+.clientes h2 {
+    color: #ADFF28;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.clientes div {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    align-items: center;
+}
+
+
+/*
+section class="contacto"
+*/
 
 .contacto {
     background-color: #1687A0;
+    height: 500px;
+    text-align: center;
+}
+
+.contacto h2 {
+    color: #FF1B1B;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.contacto input {
+    padding: 20px;
+    width: 30%;
+    border: 1px solid #BFBFBF;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.contacto div input {
+    width: 68%;
+    height: 59px;
+    border: 1px solid #BFBFBF;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.contacto button {
+    text-decoration: none;
+    margin-left: auto;
+    margin-top: 10px;
+    padding: 10px 30px 10px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: #233451;
+    border-color: #233451;
 }
