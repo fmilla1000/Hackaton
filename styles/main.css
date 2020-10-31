@@ -116,21 +116,21 @@ section class="mis-skills"
 */
 
 .my-skills {
-    height: 370px;
+    height: 380px;
     background-color: #9022FF;
 }
 
 .my-skills h2 {
     text-align: center;
     padding-top: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     color: #26CC4B;
     font-size: 36px;
 }
 
 .my-skills table {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-bottom: 0%;
     padding-top: 0%;
     display: flex;
@@ -138,20 +138,25 @@ section class="mis-skills"
     line-height: 35px;
 }
 
+.my-skills table tbody tr td {
+    padding: 10px;
+}
+
 .my-skills h3 {
     display: block;
+    padding-bottom: 10px;
     font-size: 18px;
     color: white;
 }
 
 .my-skills div {
+    margin-bottom: 20px;
     border-right: 1px solid #f6f6f6;
     border-left: 200px solid #57EFF9;
     border-radius: 10px;
     background-color: #f6f6f6;
     width: 200px;
-    height: 15px;
-    margin: 10px;
+    height: 18px;
     display: block;
 }
 
