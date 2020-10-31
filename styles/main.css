@@ -3,10 +3,13 @@ GLOBAL
 */
 
 section {
+    /* Positioning */
     position: relative;
+    /* Box-model */
     width: 960px;
     height: 500px;
     margin: auto;
+    /* Typography */
     font-family: Helvetica;
 }
 
@@ -17,32 +20,37 @@ section class="presentation"
 
 .presentation {
     background-image: url("../images/presentation.png");
-    width: 1665, 47px;
-    height: 1078, 86px;
 }
 
 .presentation h1 {
-    width: 321px;
-    height: 74px;
+    /* Positioning */
     position: absolute;
-    font-size: 64px;
-    font-weight: bold;
     top: 47px;
-    left: 30%;
+    left: 312px;
+    /* Typography */
     color: white;
+    font-size: 64px;
     line-height: 74px;
 }
 
 .presentation h2 {
+    /* Positioning */
     position: absolute;
+    top: 300px;
+    left: 80px;
+    /* Box-model */
+    width: 320px;
+    height: 85px;
+    padding: 20px;
+    /* Typography */
     font-size: 36px;
-    width: 361px;
-    top: 329px;
-    left: 86px;
     color: #FFFFFF;
-    background-color: #7299fe;
-    opacity: 0.5;
+    line-height: 42px;
+    /* Visual */
+    background-color: #7299FE;
     border-radius: 10px;
+    /* Misc */
+    opacity: 0.5;
 }
 
 
@@ -51,39 +59,55 @@ section class="about-me"
 */
 
 .about-me {
+    height: 424px;
     background-color: #7299FE;
-    height: 480px;
+}
+
+.about-me div {
+    padding: 40px;
+    height: 344px;
 }
 
 .about-me h2 {
-    font-size: 36px;
-    font-weight: bold;
+    /* Positioning */
     text-align: center;
+    /* Box-model */
+    line-height: 41px;
+    padding-bottom: 20px;
+    /* Typography */
+    font-size: 36px;
     color: #1D06A7;
-    padding-top: 30px;
+    font-style: normal;
+    font-weight: bold;
 }
 
 .about-me p {
+    /* Positioning */
     position: relative;
+    /* Box-model */
+    line-height: 24px;
+    padding-bottom: 20px;
+    /* Typography */
     font-family: Arial;
     font-size: 14px;
-    color: white;
-    margin-right: 20px;
-    margin-left: 20px;
-    line-height: 30px;
-    padding: 20px;
+    color: #F8F8F8;
 }
 
 .about-me button {
-    font-size: 22px;
-    background-color: #d16fff;
-    color: white;
-    border-radius: 15px;
+    /* Positioning */
     position: relative;
-    width: 187px;
-    height: 62px;
-    left: 38px;
-    top: 15px;
+    /* Box-model */
+    width: 190px;
+    height: 65px;
+    /* Typography */
+    font-size: 22px;
+    font-weight: bold;
+    color: #FFFFFF;
+    /* Visual */
+    background-color: #d16fff;
+    border-color: #d16fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -92,38 +116,41 @@ section class="mis-skills"
 */
 
 .my-skills {
-    background-color: #9022FF;
     height: 370px;
+    background-color: #9022FF;
 }
 
 .my-skills h2 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
     color: #26CC4B;
     font-size: 36px;
-    text-align: center;
-    padding-top: 30px;
 }
 
 .my-skills table {
-    display: flex;
-    justify-content: space-evenly;
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 0%;
     padding-top: 0%;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 35px;
 }
 
 .my-skills h3 {
+    display: block;
     font-size: 18px;
     color: white;
-    display: block;
 }
 
 .my-skills div {
-    border: 1px solid #f6f6f6;
+    border-right: 1px solid #f6f6f6;
+    border-left: 200px solid #57EFF9;
     border-radius: 10px;
     background-color: #f6f6f6;
-    width: 400px;
-    height: 10px;
+    width: 200px;
+    height: 15px;
     margin: 10px;
     display: block;
 }
@@ -134,16 +161,17 @@ section class="portafolio"
 */
 
 .portafolio {
-    background-color: #FFD233;
     height: 400px;
+    background-color: #FFD233;
 }
 
 .portafolio h2 {
-    color: #00AD84;
-    font-size: 36px;
     text-align: center;
     padding-top: 35px;
     padding-bottom: 40px;
+    color: #00AD84;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .portafolio div {
@@ -151,8 +179,10 @@ section class="portafolio"
     justify-content: space-evenly;
     padding-left: 200px;
     padding-right: 200px;
-    padding-bottom: 0%;
-    padding-top: 0%;
+}
+
+.portafolio figure {
+    margin: 5px;
 }
 
 
@@ -161,24 +191,24 @@ section class="clientes"
 */
 
 .clientes {
-    background-color: #3F4E62;
     height: 258px;
+    background-color: #3F4E62;
 }
 
 .clientes h2 {
-    color: #ADFF28;
-    font-size: 36px;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 5px;
+    color: #ADFF28;
+    font-size: 36px;
 }
 
 .clientes div {
     display: flex;
-    padding: 20px;
     justify-content: space-between;
     margin-left: 40px;
     margin-right: 40px;
+    padding: 20px;
     align-items: center;
 }
 
@@ -188,37 +218,44 @@ section class="contacto"
 */
 
 .contacto {
-    background-color: #1687A0;
-    height: 500px;
     text-align: center;
+    height: 500px;
+    background-color: #1687A0;
 }
 
 .contacto h2 {
-    color: #FF1B1B;
-    font-size: 36px;
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
+    color: #FF1B1B;
+    font-size: 36px;
 }
 
 .contacto input {
-    padding: 20px;
     width: 30%;
-    border: 1px solid #BFBFBF;
+    padding: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
+    border: 1px solid #BFBFBF;
+}
+
+.contacto input:valid {
+    border-color: rgb(130, 221, 130);
+}
+
+.contacto input:invalid {
+    border-color: red;
 }
 
 .contacto div input {
     width: 68%;
     height: 59px;
-    border: 1px solid #BFBFBF;
     margin-bottom: 20px;
     margin-right: 20px;
+    border: 1px solid #BFBFBF;
 }
 
 .contacto button {
-    text-decoration: none;
     margin-left: auto;
     margin-top: 10px;
     padding: 10px 30px 10px 30px;
